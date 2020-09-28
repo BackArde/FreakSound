@@ -1,0 +1,28 @@
+extends ../layout.pug
+
+h1 Crear nuevo anime
+form( method="POST", action="/animes/create")
+    .form-group
+        label Título
+        input.form-control(type="text", name="titulo") 
+    
+    .form-group
+        label Texto
+        input.form-control(type="text", name="texto")
+    
+    .form-group
+        label Autor
+        input.form-control(type="text", name="autor")
+    
+    .form-group
+        label Imagen
+        input.form-control(type="img", name="direccion")
+    
+    .form-group
+        label Categoria
+        input.form-control(type="text", name="categoria")
+    
+    .form-group
+        label Url
+        input.form-control(type="url", name="url")
+    

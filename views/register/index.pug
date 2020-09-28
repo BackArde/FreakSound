@@ -1,0 +1,21 @@
+extends ../layout.pug
+
+block content
+    table.table.table-hover
+        thead.thead-dark
+            tr
+                th id
+                th Nombre
+                th Apellidos
+                th Email
+                th Password
+                
+        tbody
+            each anime in animes
+                tr 
+                    td= anime.id
+                    td= anime.nombre
+                    td= anime.apellidos
+                    td= anime.email
+                    td= anime.password
+                   

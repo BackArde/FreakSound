@@ -1,0 +1,22 @@
+extends ../layout.pug
+
+h1 Crear nuevo registro
+form( method="POST", action="/register/create")
+    .form-group
+        label Nombre
+        input.form-control(type="text", name="nombre") 
+    
+    .form-group
+        label Apellidos
+        input.form-control(type="text", name="apellidos")
+    
+    .form-group
+        label Email
+        input.form-control(type="text", name="email")
+    
+    .form-group
+        label Password
+        input.form-control(type="img", name="password")
+    
+
+    

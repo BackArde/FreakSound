@@ -1,0 +1,31 @@
+POST http://localhost:3000/api/animes
+Content-Type: application/json
+ 
+{
+   "titulo":"Natsuyuki Rendezvous ",
+   "texto": "Hazuki es un joven que comienza a trabajar en una tienda de flores tras enamorarse a primera vista de la dueña del negocio. Sin embargo, Hazuki se entera que Rokka perdió a su esposo, el joven empleado es el único que puede ver el espíritu. Atsushi, el difunto, hizo una promesa de quedarse para siempre en el negocio e interferir en cualquier relación que Rokka intente con otra persona, sin embargo, más adelante posee el cuerpo del joven empleado y procede a enamorar a Rokka. Al enterarse de estar poseído por el fallecido, Hazuki consigue regresar a su cuerpo y se da cuenta que Rokka se está enamorando de él. Con el tiempo Hazuki y Rokka se casan, atienden el negocio juntos y tienen una hija que en un futuro hereda el negocio.",
+   "autor": "Haruka Kawachi",
+   "imagen":"https://freakelitex.com/wp-content/uploads/2019/09/b3cbc66760753a90dba97d5acdac5b6a1341526085_full.jpg",
+   "categoria":"Josei",
+   "url": "https://www.youtube.com/watch?v=wTJ_CjREezU&list=PL7bwIieUCQQSkM6R8RDfGIwPm1hO39eYN&ab_channel=Noots33"
+}
+
+###
+GET http://localhost:3000/api/animes
+
+###
+
+GET http://localhost:3000/api/animes/categoria/Seinen
+
+###
+
+
+POST http://localhost:3000/api/register
+Content-Type: application/json
+
+{
+   "nombre": "María" ,
+   "apellidos": "Latorre Molina" ,
+   "email": "maria@gmail.yu" ,
+   "password": "123456"
+}

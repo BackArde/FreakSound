@@ -1,0 +1,23 @@
+extends ../layout.pug
+
+block content
+    table.table.table-hover
+        thead.thead-dark
+            tr
+                th id
+                th Título
+                th Texto
+                th Autor
+                th Imagen
+                th Categoría
+                th Url
+        tbody
+            each anime in animes
+                tr 
+                    td= anime.id
+                    td= anime.titulo
+                    td= anime.texto
+                    td= anime.autor
+                    td= anime.imagen
+                    td= anime.categoria
+                    td= anime.url
